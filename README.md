@@ -25,6 +25,10 @@ to.span('hey!',
 ### Adding attributes
 Just add an object to the arguments, doesnt mater what order it's provided in.
 ```js
-to.span('hey!', { id: 'greeting' }
+to.div('hey!', { id: 'greeting' }
 )
+```
+
+```html
+<div id="greeting">hey!</div>
 ```
