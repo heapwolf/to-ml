@@ -37,3 +37,9 @@ assert.equal(
   '<div>test 1</div>',
   'allow %s and %d in bodies'
 )
+
+assert.equal(
+  h.div(h.br, h.hr, h.br),
+  '<div><br><hr><br></div>',
+  'allow functions to represent their tag values so you dont have to do hr()'
+)

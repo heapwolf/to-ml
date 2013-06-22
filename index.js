@@ -1,8 +1,8 @@
 
-var toMarkup = module.exports = function toMarkup() {
+var toML = module.exports = function toML() {
 
-  if (!(this instanceof toMarkup)) {
-    return new toMarkup()
+  if (!(this instanceof toML)) {
+    return new toML()
   }
 }
 
@@ -65,6 +65,9 @@ function generate(name, args) {
     if (Array.isArray(args[a])) {
       args[a] = args[a].join(' ')
     }
+    else if (typeof args[a] === 'function') {
+      args[a] = '<' + args[a].identifier + '>'
+    }
     else if (typeof args[a] === 'object') {
       attrs = []
       for(var k in args[a]) {
@@ -89,7 +92,9 @@ function generate(name, args) {
 
 tags.concat(voids).forEach(function(name) {
 
-  toMarkup.prototype[name] = function() {
+  toML.prototype[name] = function() {
     return generate.call(null, name, arguments)
   }
+
+  toML.prototype[name].identifier = name
 })

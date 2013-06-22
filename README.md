@@ -32,3 +32,16 @@ to.div('hey!', { id: 'greeting' }
 ```html
 <div id="greeting">hey!</div>
 ```
+### When there are no params
+```js
+  to.header(
+    to.br,
+    to.h1('Hello, World!')
+    to.hr,
+    to.br
+  ),
+```
+
+```html
+<header><br><h1>Hello, World!</h1><hr><br></header>
+```
