@@ -3,7 +3,7 @@ Easily generate markup from javascript
 
 # USAGE
 ```js
-var to = require('toMarkup')()
+var to = require('to-ml')()
 to.span('hello, world!')
 ```
 
