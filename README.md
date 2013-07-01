@@ -1,5 +1,5 @@
 # SYNOPSIS
-Easily generate markup from javascript
+Easily generate markup from javascript. Why? The DOM is a huge, slow moving beast.
 
 # USAGE
 ```js
