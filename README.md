@@ -21,7 +21,11 @@ template(function() {
 
 ### IDs and Classes
 ```js
-a('#home.primary.link', 'home')
+a('#home.primary.link', 'home', { href: '/' })
+```
+
+```html
+<a id="home" class="primary link" href="/">home</a>
 ```
 
 ### Adding attributes
