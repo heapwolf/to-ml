@@ -47,11 +47,11 @@ looks like this...
 ### Adding attributes
 Just add an object to the arguments, doesnt mater what order it's provided in.
 ```js
-textarea('hey!', { value: 'greeting' })
+textarea('hey!', { 'data-id': 'greeting' })
 ```
 
 ```html
-<div id="greeting">hey!</div>
+<textarea data-id="greeting">hey!</textarea>
 ```
 
 ### When there are no params
