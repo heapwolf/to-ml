@@ -22,7 +22,7 @@ template(function() {
 ```
 
 ```html
-<span>hey!<span>this is<b>easy</b></span></span>
+<div>hey!<span>this is<b>easy</b></span></div>
 ```
 
 ### IDs and Classes
