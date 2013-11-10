@@ -1,11 +1,20 @@
 {
   "name": "to-ml",
-  "version": "0.0.2",
-  "description": "generate markup",
+  "version": "1.0.0",
+  "description": "very simple, very tiny lib to generate markup without a dom",
   "main": "index.js",
   "scripts": {
     "test": "node test.js"
   },
-  "author": "",
+  "keywords": [
+    "templates",
+    "template",
+    "templating",
+    "weld",
+    "plates",
+    "dom",
+    "markup"
+  ],
+  "author": "hij1nx",
   "license": "MIT"
 }
