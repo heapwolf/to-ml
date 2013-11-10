@@ -3,7 +3,7 @@ Generate markup
 
 # USAGE
 ```js
-var templte = require('to-ml')().templte
+var template = require('to-ml')().template
 ```
 
 ```js
