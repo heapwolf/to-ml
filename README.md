@@ -19,10 +19,15 @@ template(function() {
 <span>hey!<span>this is<b>easy</b></span></span>
 ```
 
+### IDs and Classes
+```js
+a('#home.primary.link', 'home')
+```
+
 ### Adding attributes
 Just add an object to the arguments, doesnt mater what order it's provided in.
 ```js
-div('hey!', { id: 'greeting' })
+textarea('hey!', { value: 'greeting' })
 ```
 
 ```html
