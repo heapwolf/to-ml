@@ -6,6 +6,15 @@ var toML = module.exports = function toML() {
   }
 }
 
+toML.prototype.template = function(fn) {
+  var srcbody = fn
+    .toString()
+    .replace(/^function\s*\(\)\s*{/, 'with(toML) {');
+
+  var nfn = Function('toML', srcbody)
+  return nfn(toML.prototype)
+}
+
 var formatRegExp = /%[sd%]/g
 var format = function(f) {
 

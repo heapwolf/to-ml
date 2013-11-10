@@ -1,6 +1,7 @@
 
 var h = require('./index')()
 var assert = require('assert')
+var template = h.template;
 
 assert.equal(
   h.div('test'), 
@@ -43,3 +44,12 @@ assert.equal(
   '<div><br><hr><br></div>',
   'allow functions to represent their tag values so you dont have to do hr()'
 )
+
+assert.equal(
+  template(function() {
+    return div('this', span('shoud'), 'be simple')
+  }),
+  '<div>this<span>shoud</span>be simple</div>',
+  'a template should be simple to compose'
+)
+
