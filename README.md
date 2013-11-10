@@ -20,12 +20,22 @@ template(function() {
 ```
 
 ### IDs and Classes
+If a string value matches the pattern used to create `IDs` and `classes`, they
+will be automatically generated. 
+
 ```js
 a('#home.primary.link', 'home', { href: '/' })
 ```
 
 ```html
 <a id="home" class="primary link" href="/">home</a>
+```
+
+The pattarn to determine if a string value passed to a tag function is special 
+looks like this...
+
+```
+'[#id][.class1[.class2[...]]]'
 ```
 
 ### Adding attributes
