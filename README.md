@@ -3,9 +3,9 @@ Generate markup
 
 # DESCRIPTION
 Generating markup can get ugly, the mix of html and javascript can
-lead to some very confusing code very quickly. This little library
-makes it helps you create readable code. It also has no dependencies 
-so you can use it on your node.js server.
+get very confusing very quickly. This little library helps you create 
+readable code. It also has no dependencies so you can use it on your 
+node.js server.
 
 # USAGE
 ```js
