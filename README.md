@@ -4,8 +4,8 @@ Generate markup
 # DESCRIPTION
 Generating markup can get ugly, the mix of html and javascript can
 get very confusing very quickly. This little library helps you create 
-readable code. It also has no dependencies so you can use it on your 
-node.js server.
+readable code. It also has no dependencies on the DOM so you can use 
+it on your node.js server.
 
 # USAGE
 ```js
