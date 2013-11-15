@@ -60,3 +60,11 @@ assert.equal(
   '<div id="foo" class="bar bazz" >this<span>shoud</span>be simple</div>',
   'a template should be simple to compose'
 )
+
+assert.equal(
+  template(function() {
+    return div('.bar.bazz', 'this', span('shoud'), 'be simple')
+  }),
+  '<div class="bar bazz" >this<span>shoud</span>be simple</div>',
+  'a template should be simple to compose'
+)
