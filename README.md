@@ -37,7 +37,7 @@ a('#home.primary.link', 'home', { href: '/' })
 <a id="home" class="primary link" href="/">home</a>
 ```
 
-The pattarn to determine if a string value passed to a tag function is special 
+The pattern to determine if a string value passed to a tag function is special 
 looks like this...
 
 ```
