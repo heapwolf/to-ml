@@ -77,9 +77,9 @@
       parts = parts[0].split('.');
 
       if (args[0][0] == '#') {
-        attrs += ' id="' + parts.shift().slice(1) + '" '
+        attrs += ' id="' + parts.shift().slice(1) + '"'
       }
-      attrs += 'class="' + parts.join(' ') + '" '
+      attrs += ' class="' + parts.join(' ').trim() + '" '
       delete args[0]
     }
 
