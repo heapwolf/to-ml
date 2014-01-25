@@ -1,5 +1,12 @@
+# NOTE
+
+In the real world, I recommend **NEVER** building an app with a tool like this for two main reasons: 1. 
+
+  - Generating markup programmatically  **completely** violates the separation of concerns principle. 
+  - It's hostile toward project members who do not have Javascript in their skillset.
+
 # SYNOPSIS
-Generate markup
+A small library to generate markup.
 
 # DESCRIPTION
 Generating markup can get ugly, the mix of html and javascript can
